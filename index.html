@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>桌遊中文規則</title>
+<style>
+:root{
+  --bg:#f7f5f0; --card:#ffffff; --text:#1f1d1a; --muted:#6b665d;
+  --border:#e4dfd4; --accent:#c2410c; --accent-soft:#fff1e8;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#16151a; --card:#211f26; --text:#ece9e3; --muted:#a39e94;
+    --border:#34313a; --accent:#fb923c; --accent-soft:#2c2018;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#16151a; --card:#211f26; --text:#ece9e3; --muted:#a39e94;
+  --border:#34313a; --accent:#fb923c; --accent-soft:#2c2018;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--text);
+  font-family:system-ui,-apple-system,"Segoe UI","Noto Sans TC","Microsoft JhengHei",sans-serif;
+  line-height:1.6;
+}
+main{max-width:760px; margin:0 auto; padding:48px 16px 64px}
+h1{font-size:2rem; margin:0 0 4px}
+.lead{color:var(--muted); margin:0 0 32px}
+.games{display:grid; gap:16px}
+.game{
+  display:block; text-decoration:none; color:inherit;
+  background:var(--card); border:1px solid var(--border); border-radius:14px;
+  padding:20px 22px; transition:border-color .15s, transform .15s;
+}
+.game:hover,.game:focus-visible{border-color:var(--accent); transform:translateY(-2px); outline:none}
+.game h2{margin:0; font-size:1.3rem}
+.game .en{color:var(--muted); font-weight:500; font-size:.95rem; margin-left:6px}
+.game p{margin:8px 0 12px; color:var(--muted)}
+.go{
+  display:inline-block; font-size:.9rem; font-weight:600; color:var(--accent);
+  background:var(--accent-soft); padding:4px 12px; border-radius:999px;
+}
+footer{margin-top:40px; font-size:.85rem; color:var(--muted)}
+</style>
+</head>
+<body>
+<main>
+  <h1>🎲 桌遊中文規則</h1>
+  <p class="lead">英文規則書整理成的中文說明，附原文截圖對照。</p>
+
+  <div class="games">
+    <a class="game" href="Black%20Friday/BlackFriday-%E4%B8%AD%E6%96%87%E8%A6%8F%E5%89%87.html">
+      <h2>📈 黑色星期五<span class="en">Black Friday</span></h2>
+      <p>買股、賣股、買黃金，在股市崩盤前變成最有錢的人。</p>
+      <span class="go">閱讀規則 →</span>
+    </a>
+    <a class="game" href="Hot%20Streak/HotStreak-%E4%B8%AD%E6%96%87%E8%A6%8F%E5%89%87.html">
+      <h2>🏁 熱血連勝<span class="en">Hot Streak</span></h2>
+      <p>下注、看吉祥物賽跑、尖叫！三場比賽後錢最多的人贏。</p>
+      <span class="go">閱讀規則 →</span>
+    </a>
+    <a class="game" href="Making%20Monsters/MakingMonsters-%E4%B8%AD%E6%96%87%E8%A6%8F%E5%89%87.html">
+      <h2>🧪 怪獸製造<span class="en">Making Monsters</span></h2>
+      <p>你是瘋狂科學家：從袋子抽零件、拼出怪獸、通電復活，贏得最多「名聲」。</p>
+      <span class="go">閱讀規則 →</span>
+    </a>
+  </div>
+
+  <footer>規則內容僅供個人學習參考，版權屬原出版商所有。</footer>
+</main>
+</body>
+</html>
